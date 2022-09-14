@@ -21,13 +21,13 @@ body{
 .menu {
     display: flex;
     justify-content: space-evenly;
+    height: 90px;
     align-items: center;
-    padding-top: 2.6%;
 }
 
 .menu a{
     font-family: 'Russo One', sans-serif;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     text-transform: uppercase;
     color: white;
 }
@@ -38,7 +38,7 @@ body{
 
 
 .menu li  ul{
-    height: 100px;
+    height: 70px;
     width: 10%;
     
     padding: 10px;
@@ -56,7 +56,7 @@ body{
 .logo{
     position: absolute;
     left: 0;
-    height: 120px;
+    height: 90px;
 }
 
 .logo img{
@@ -64,6 +64,10 @@ body{
 }
 
 .cabecalho{
-    height: 120px;
+    height: 90px;
     background-color: rgb(8,5,56);
+}
+
+.banner1 img{
+    width: 100%;
 }
