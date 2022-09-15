@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+:root{
+    --rocketblue: rgb(8,5,56);
+    --rocketred: rgb(255,2,74);
+}
 
 * {
     margin: 0;
@@ -13,6 +18,7 @@
 }
 
 body{
+    width: 100%;
     font-family: arial, helvetica, sans-serif;
     font-size: 16px;
 }
@@ -74,4 +80,57 @@ body{
 
 .banner1 img{
     width: 100%;
+}
+
+.construcao{
+    width: 100%;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.construcao figure{
+    display: flex;
+    justify-content: center;
+}
+
+
+.construcao img{
+    width: 75%;  
+}
+
+
+.textoConstrucao{
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px 4px rgb(201, 199, 199);
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 40%;
+}
+
+.textoConstrucao h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: var(--rocketblue);
+    font-size: 32px;
+}
+
+.textoConstrucao h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: var(--rocketred);
+    font-size: 26px;
+}
+
+.textoConstrucao p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 17px;
 }
