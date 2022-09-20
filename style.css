@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 :root{
     --rocketblue: rgb(8,5,56);
     --rocketred: rgb(255,2,74);
+    --rocketgradient: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(235,4,74,1) 0%, rgba(208,66,136,1) 100%);
 }
 
 * {
@@ -78,16 +80,13 @@ body{
     background-color: rgb(8,5,56);
 }
 
-.banner1 img{
-    width: 100%;
-}
-
 .construcao{
     width: 100%;
     padding-top: 100px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    padding-bottom: 80px;
 }
 
 .construcao figure{
@@ -133,4 +132,86 @@ body{
     padding-top: 10px;
     text-align: center;
     font-size: 17px;
+}
+
+.faixa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--rocketblue);
+    text-transform: uppercase;
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+
+.faixa h2{
+    color: var(--rocketred);
+    font-family: 'Russo One', sans-serif;
+    font-size: 2rem;
+}
+
+.faixa h1{
+    color: white;
+    padding-top: 10px;
+    font-family: 'Russo One', sans-serif;
+    font-size: 2.7rem;
+}
+
+.faixa h3{
+    color:white;
+    padding-top: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+
+.servicos{
+    background: var(--rocketgradient);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+    font-size: 4rem;
+    color: var(--rocketred);
+}
+
+.servicos{
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+
+.servicosBox {
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px 4px rgb(224, 21, 79);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 20%;
+    background-color: var(--rocketblue);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+
+    transition: 250ms;
+}
+
+.landingpage p, .artes p, .seo p, .ads p{
+    color: var(--rocketred);
+}
+
+.servicosBox:hover{
+    transform: scale(1.2);
 }
