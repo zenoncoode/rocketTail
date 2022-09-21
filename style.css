@@ -111,7 +111,7 @@ body{
 }
 
 .textoConstrucao h1{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Russo One', sans-serif;
     font-weight: 500;
     text-align: center;
     color: var(--rocketblue);
@@ -119,7 +119,7 @@ body{
 }
 
 .textoConstrucao h2{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Russo One', sans-serif;
     font-weight: 500;
     text-align: center;
     color: var(--rocketred);
@@ -127,11 +127,10 @@ body{
 }
 
 .textoConstrucao p{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
     padding-top: 10px;
     text-align: center;
-    font-size: 17px;
+    font-size: 20px;
 }
 
 .faixa{
