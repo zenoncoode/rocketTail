@@ -86,7 +86,7 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding-bottom: 80px;
+    padding-bottom: 60px;
 }
 
 .construcao figure{
@@ -127,6 +127,59 @@ body{
 }
 
 .textoConstrucao p{
+    font-family: 'Oswald', sans-serif;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.puzzle{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 80px;
+}
+
+.puzzle figure{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+}
+
+
+.puzzle img{
+    width: 75%;  
+}
+
+
+.textoPuzzle{
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px 4px rgb(201, 199, 199);
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 40%;
+}
+
+.textoPuzzle h1{
+    font-family: 'Russo One', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: var(--rocketblue);
+    font-size: 32px;
+}
+
+.textoPuzzle h2{
+    font-family: 'Russo One', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: var(--rocketred);
+    font-size: 26px;
+}
+
+.textoPuzzle p{
     font-family: 'Oswald', sans-serif;
     padding-top: 10px;
     text-align: center;
@@ -216,46 +269,26 @@ body{
 }
 
 
-.quebraCabeca figure{
-    padding-top: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+.nome { grid-area: header; }
+.endereco { grid-area: main; }
+.cep { grid-area: right; }
+.email { grid-area: footer; }
+
+.formularioContato {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'main main main main right right'
+    'footer footer footer footer footer footer';
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
 }
 
-.puzzle img{
-    width: 30%;
-
-}
-
-
-.textoQuebraCabeca{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.textoQuebraCabeca h1{
-    font-family: 'Oswald', sans-serif;
-    text-align: center;
-    color: var(--rocketblue);
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    font-weight: 500;
-}
-
-.textoQuebraCabeca h2{
-    font-family: 'Oswald', sans-serif;
-    text-align: center;
-    color: var(--rocketred);
-    font-size: 1.7rem;
-    text-transform: uppercase;
-    font-weight: 500;
-}
-
-.textoQuebraCabeca h3{
-    color:black;
-    font-size: 1rem;
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
+.formularioContato > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
 }
